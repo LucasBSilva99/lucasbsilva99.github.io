@@ -126,9 +126,9 @@ img {
   height: auto;
 }
 
-.logo__img {
+logo__img {
   padding-top: 2rem;
-  width: 100px;
+  width: 80px;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
