@@ -233,6 +233,10 @@
   .stop h3 { margin: 0; font-size: 1.3rem; font-weight: 600; line-height: 1.3; }
   .stop h3 span { color: var(--muted); font-weight: 400; }
   .stop p { color: var(--muted); margin-top: 6px; max-width: 62ch; font-size: 16.5px; }
+  .sub { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 12px; max-width: 64ch; }
+  .sub li { border-left: 2px solid var(--amber); padding-left: 14px; color: var(--muted); font-size: 16.5px; line-height: 1.5; }
+  .sub b { color: var(--text); font-weight: 600; }
+  .sub small { display: block; margin-top: 4px; font-family: var(--mono); font-size: 12px; color: var(--dim); letter-spacing: 0.02em; }
   .langline { margin-top: 28px; max-width: 32ch; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
 
   /* ---------- Projects ---------- */
@@ -383,8 +387,8 @@
         </div>
         <dl class="dash" aria-label="At a glance">
           <div><dt>Base</dt><dd>Lisbon, Portugal<small>38.72°N 9.14°W</small></dd></div>
-          <div><dt>Role</dt><dd>Python &amp; AI Developer at Siemens<small>since April 2024</small></dd></div>
-          <div><dt>Builds</dt><dd>Python, PyTorch, SQL, JavaScript</dd></div>
+          <div><dt>Role</dt><dd>Python &amp; AI Developer at Siemens<small>since April 2024 · department AI lead</small></dd></div>
+          <div><dt>Builds</dt><dd>Python, PyTorch, TensorFlow, Django, SQL, Azure</dd></div>
           <div><dt>Off duty</dt><dd>BMW F900XR<small>motorcycles</small></dd></div>
         </dl>
       </div>
@@ -398,12 +402,13 @@
         <div>
           <div class="prose">
             <p>I'm a software developer with a Master's in Computer Science from FCUL and a focus on artificial intelligence. My thesis used <strong>deep learning to predict how ALS progresses</strong>, and I've kept building in that direction since: convolutional networks, genetic algorithms, agent simulations and parallel feature extraction.</p>
-            <p>Since April 2024 I've been a Python &amp; AI Developer at Siemens. Before that I was a Data Engineer at KPMG in Lisbon, building ETL and analytics workflows with Python, SQL and Alteryx.</p>
+            <p>Since April 2024 I've been a Python &amp; AI Developer at Siemens, where I build AI tools like a payment-to-invoice matching system, develop a pension investment insights application, and am at the forefront of my department's AI initiatives as <strong>one of its key experts and main point of contact on AI</strong>. Before that I was a Data Engineer at KPMG in Lisbon, building ETL and analytics workflows with Python, SQL and Alteryx.</p>
           </div>
           <dl class="skills">
             <div><dt>Languages</dt><dd><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Java</span><span class="chip">JavaScript</span></dd></div>
-            <div><dt>AI &amp; ML</dt><dd><span class="chip">PyTorch</span><span class="chip">Deep learning</span><span class="chip">CNNs</span><span class="chip">Genetic algorithms</span><span class="chip">NumPy</span><span class="chip">pandas</span></dd></div>
+            <div><dt>AI &amp; ML</dt><dd><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Classification</span><span class="chip">Retrieval models</span><span class="chip">Deep learning</span><span class="chip">CNNs</span><span class="chip">Genetic algorithms</span><span class="chip">NumPy</span><span class="chip">pandas</span></dd></div>
             <div><dt>Data</dt><dd><span class="chip">ETL</span><span class="chip">Data cleaning</span><span class="chip">Data analysis</span><span class="chip">Alteryx</span></dd></div>
+            <div><dt>Web</dt><dd><span class="chip">Django</span><span class="chip">Back end</span><span class="chip">Front end</span><span class="chip">App security</span></dd></div>
             <div><dt>Cloud</dt><dd><span class="chip">Microsoft Azure (AZ-900)</span></dd></div>
           </dl>
         </div>
@@ -421,7 +426,14 @@
       <div class="timeline">
         <article class="stop">
           <div class="years"><span class="now">Apr 2024 – Present</span></div>
-          <div><h3>Python &amp; AI Developer <span>· Siemens</span></h3></div>
+          <div>
+            <h3>Python &amp; AI Developer <span>· Siemens</span></h3>
+            <ul class="sub">
+              <li><b>AI payment mapping.</b> A classifier and a retrieval model map incoming payments to invoices, giving the system more valuable proposals and further reducing manual work.<small>Python · Azure · TensorFlow · PyTorch · SQL</small></li>
+              <li><b>Pension investment insights.</b> Back-end and front-end development of an application with graphs and data views of pension investments, supporting better decisions. Responsible for its security and management.<small>Python · Django</small></li>
+              <li><b>AI initiatives.</b> At the forefront of the department's AI initiatives, as one of its key experts and main point of contact on AI.</li>
+            </ul>
+          </div>
         </article>
         <article class="stop">
           <div class="years">2022 – 2024</div>
