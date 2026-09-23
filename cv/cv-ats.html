@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucas Silva CV</title>
+<!-- Plain single-column CV for job portals / ATS. Build with: node cv/build.mjs  →  assets/pdf/Lucas_Silva_CV_ATS.pdf -->
+<style>
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+
+  @page { size: A4; margin: 10mm 13mm 9mm; }
+  html, body { margin: 0; background: #fff; color: #11161b; font-family: "Instrument Sans", Arial, Helvetica, sans-serif; font-size: 9.3pt; line-height: 1.33; }
+  h1 { font-size: 19pt; font-weight: 600; margin: 0; line-height: 1.1; }
+  .headline { font-size: 10.5pt; font-weight: 600; color: #9a6200; margin: 0.6mm 0 1mm; }
+  .contact { margin: 0 0 1.6mm; color: #333; }
+  .contact a { color: inherit; text-decoration: none; }
+  h2 { font-size: 10.5pt; font-weight: 600; text-transform: uppercase; margin: 2.6mm 0 1.2mm; padding-bottom: 0.6mm; border-bottom: 0.3mm solid #c9cfd4; }
+  p { margin: 0 0 0.8mm; }
+  .role { display: flex; justify-content: space-between; gap: 4mm; font-weight: 600; margin-top: 1.4mm; }
+  .role span:last-child { font-weight: 400; white-space: nowrap; }
+  .sub { font-weight: 600; margin: 0.9mm 0 0.2mm; }
+  ul { margin: 0.3mm 0 0; padding-left: 4.5mm; }
+  li { margin-bottom: 0.4mm; }
+  .skills p { margin-bottom: 0.4mm; }
+  .skills b, .tech b { font-weight: 600; }
+</style>
+</head>
+<body>
+  <h1>Lucas Silva</h1>
+  <p class="headline">AI Engineer | Machine Learning | LLMs | Python</p>
+  <p class="contact">Lisbon, Portugal (open to remote) | +351 912 951 312 | <a href="mailto:lucasbarretosilva99@gmail.com">lucasbarretosilva99@gmail.com</a><br>
+  <a href="https://www.linkedin.com/in/lucasbarretosilva/">linkedin.com/in/lucasbarretosilva</a> | <a href="https://github.com/LucasBSilva99">github.com/LucasBSilva99</a> | <a href="https://lucasbsilva99.github.io">lucasbsilva99.github.io</a></p>
+
+  <h2>Summary</h2>
+  <p>AI developer with 4+ years across machine learning, data engineering and full-stack development. At Siemens, builds production ML systems that automate payment-to-invoice matching for 3–5k payments a day, and leads the department's AI knowledge sharing and training. MSc in Computer Science specialised in Artificial Intelligence. Based in Portugal and open to remote roles.</p>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>AI and Machine Learning:</b> Machine Learning, Deep Learning, LLMs, Generative AI, Classification, Retrieval Models, PyTorch, TensorFlow, NumPy, pandas</p>
+    <p><b>Programming:</b> Python, SQL, JavaScript, Java</p>
+    <p><b>Web and APIs:</b> Django, REST APIs, Back-end Development, Front-end Development, Application Security</p>
+    <p><b>Cloud and DevOps:</b> Microsoft Azure, Docker, Git, CI/CD</p>
+    <p><b>Data:</b> Data Engineering, ETL, Alteryx, Data Analysis</p>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="role"><span>Python &amp; AI Developer, Siemens, Lisbon, Portugal</span><span>Apr 2024 – Present</span></div>
+  <p class="sub">AI payment mapping</p>
+  <ul>
+    <li>Built a machine learning system that combines a classifier with a retrieval model to map incoming payments to invoices.</li>
+    <li>Raised automated match coverage from 83–85% to about 88–90% across 3–5k payments a day, reducing manual reconciliation work. Python, PyTorch, TensorFlow, Microsoft Azure, SQL.</li>
+  </ul>
+  <p class="sub">Pension investment insights application</p>
+  <ul>
+    <li>Full-stack development of an application that gives insight into pension investments through interactive charts and data views, supporting investment decisions.</li>
+    <li>Responsible for application security and management. Technologies: Python, Django, REST APIs.</li>
+  </ul>
+  <p class="sub">AI knowledge sharing and training</p>
+  <ul>
+    <li>Founded a department initiative to share AI knowledge through talks and use-case showcases, helped deliver AI trainings to colleagues, and act as a key expert and main point of contact on AI.</li>
+  </ul>
+
+  <div class="role"><span>Data Engineer, KPMG, Lisbon, Portugal</span><span>Sep 2022 – Mar 2024</span></div>
+  <ul>
+    <li>Advisory, Technology Consulting. Built ETL and analytics workflows with Python, SQL and Alteryx for client data.</li>
+  </ul>
+
+  <div class="role"><span>Researcher, LASIGE, University of Lisbon</span><span>2021 – 2022</span></div>
+  <ul>
+    <li>FCT research scholarship. Deep learning (MLP, CNN, LSTM) for predicting ALS disease progression; presented at the 7th LASIGE Workshop, 2022.</li>
+  </ul>
+
+  <div class="role"><span>Sales Assistant, Worten, Portugal</span><span>Sep 2018 – Oct 2019</span></div>
+
+  <h2>Education</h2>
+  <div class="role"><span>MSc Computer Science and Engineering (AI), University of Lisbon, FCUL</span><span>2020 – 2022</span></div>
+  <p>Thesis: Deep Learning for Predicting Disease Progression of Clinical Endpoints in ALS. Final grade 16/20.</p>
+  <div class="role"><span>BSc Computer Science and Engineering, Lusófona University (ULHT)</span><span>2017 – 2020</span></div>
+
+  <h2>Projects</h2>
+  <ul>
+    <li>Diabetic retinopathy detection: CNN with image preprocessing for binary and 0–4 grade classification (TensorFlow, Keras).</li>
+    <li>Asteroids AI: genetic algorithm that evolves neural networks to play Asteroids (Python).</li>
+    <li>Parallel temporal feature extraction: parallel feature aggregation for fraud-detection data.</li>
+    <li>Multi-agent traffic simulation: cars and traffic lights as autonomous agents (Python, Pygame).</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>Microsoft Certified: Azure Fundamentals (AZ-900); Alteryx Foundation and Core; Cambridge Certificate in Advanced English (C1), 2017</li>
+  </ul>
+
+  <h2>Languages</h2>
+  <p>Portuguese (native), English (advanced, C1)</p>
+</body>
+</html>
