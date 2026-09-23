@@ -1,1122 +1,648 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-        
-        <!--==================== SWIPER CSS====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-        <!--==================== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <link rel="icon" href="assets/img/logo_transparent2.png">
-
-        <title>Lucas Silva Portfolio</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#home" class="nav__logo">
-                    <img src="assets/img/logo_transparent2.png" alt="" class="logo_img">
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Projects
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact Me
-                            </a>
-                        </li>
-
-                    </ul>
-                    
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/lucasbarretosilva/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-    
-                            <a href="https://github.com/LucasBSilva99" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>                            
-                            </a>
-                        </div>
-    
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-
-                                    <!--==================== 
-                                        Insert your image in the Img folder and Change your image |
-                                        Center your image with X: horizontal, Y: vertical 
-                                    ====================-->
-                                    <image class="home__blob-img" x="12" y="18" href="assets/img/perfil.png"/>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Lucas Silva</h1>
-                            <h3 class="home__subtitle">Data Engineer at KPMG</h3>
-                            <p class="home__description">Computer Science Degree at ULHT. <br> Master's Degree in Computer Science at FCUL.</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My introduction</span>
-
-                <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
-
-                    <div class="about__data">
-                        <p class="about__description">Skilled and passionate, with an interest in Artificial Intelligence and Data Science.
-                            Always trying to acquire more knowledge and finding ways to improve myself. I'm determined to learn and improve my skills 
-                            to overcome whatever challenge there may be.
-                        </p>
-
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">1</span>
-                                <span class="about__info-name">Years <br> experience</span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">10+</span>
-                                <span class="about__info-name">Completed <br> projects</span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">2</span>
-                                <span class="about__info-name">Companies <br> worked</span>
-                            </div>
-                        </div>
-
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">Portuguese</span>
-                                <span class="about__info-name">Native Language</span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">English</span>
-                                <span class="about__info-name">Advanced Certificate</span>
-                            </div>
-                        </div>
-
-                        <div class="about__buttons">
-                            <!--==================== Change your CV ====================-->
-                            <a download="" href="assets/pdf/Lucas_Silva_CV.pdf" class="button button--flex">
-                                Download CV <i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My personal journey</span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target="#education">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-
-                        <div class="qualification__button button--flex" data-target="#work">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div>                      
-                    </div>
-
-                    <div class="qualification__sections">
-                        <!--=============== QUALIFICATION CONTENT 1 ===============-->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                            <!--=============== QUALIFICATION 1 ===============-->
-
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">First Certificate in English</h3>
-                                    <span class="qualification__subtitle">University of Cambridge</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2016
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            
-                            <!--=============== QUALIFICATION 4 ===============-->
-                            <div class="qualification__data">                                 
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                          
-                                <div>
-                                    <h3 class="qualification__title">Certificate in Advanced English</h3>
-                                    <span class="qualification__subtitle">University of Cambridge</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017
-                                    </div>
-                                </div>
-                            </div>
-                            <!--=============== QUALIFICATION 3 ===============-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Computer Science Bachelor</h3>
-                                    <span class="qualification__subtitle">ULHT - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017 - 2020
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-    
-                            </div>
-                            
-                            <!--=============== QUALIFICATION 4 ===============-->
-                            <div class="qualification__data">                                 
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                          
-                                <div>
-                                    <h3 class="qualification__title">Computer Science Master</h3>
-                                    <span class="qualification__subtitle">FCUL - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2022
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <!--=============== QUALIFICATION 5 ===============-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">LASIGE Researcher</h3>
-                                    <span class="qualification__subtitle">LASIGE - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2022
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-    
-                            <!--=============== QUALIFICATION 4 ===============-->
-                            <div class="qualification__data">
-                                <div></div>
-                                     
-                                <div class="qualification__time">
-                                    <span class="qualification__rounder"></span>
-                                     <!-- <span class="qualification__line"></span>  -->
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">FCT Scholarship</h3>
-                                    <span class="qualification__subtitle">Portugal - Foundation for Science and Technology</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021-2022
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!--=============== QUALIFICATION CONTENT 2 ===============-->
-                        <div class="qualification__content" data-content id="work">
-                            <!--=============== QUALIFICATION 1 ===============-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Sales Assistant</h3>
-                                    <span class="qualification__subtitle">Worten - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2018-2019
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            
-                            <!--=============== QUALIFICATION 2 ===============-->
-                            <div class="qualification__data">
-                                <div></div>
-    
-                                <div class="qualification__time">
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Data Engineer</h3>
-                                    <span class="qualification__subtitle">KPMG - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022-Present
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Alteryx Foundation Certification</h3>
-                                    <span class="qualification__subtitle">KPMG - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="qualification__data">
-                                <div></div>
-    
-                                <div class="qualification__time">
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Alteryx Core Certification</h3>
-                                    <span class="qualification__subtitle">KPMG - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">AZ-900 Certification</h3>
-                                    <span class="qualification__subtitle">KPMG - Portugal</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
-
-                <div class="skills__container container grid">
-                    <div>
-                        <!--=============== SKILLS 1 ===============-->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-keyboard skills__icon"></i>
-    
-                                <div>
-                                    <h1 class="skills__title">Programming</h1>
-                                    <span class="skills__subtitle">More than 5 years</span>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-    
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">SQL</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__sql"></span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__java"></span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Javascript</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!--=============== SKILLS 2 ===============-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-database skills__icon"></i>
-    
-                                <div>
-                                    <h1 class="skills__title">Data Science</h1>
-                                    <span class="skills__subtitle">More than 3 years</span>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-    
-                            <div class="skills__list grid">
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Deep Learning</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__deeplearning"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Machine Learning</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__machinelearning"></span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Pytorch</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__pytorch"></span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Numpy & Pandas</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__numpypandas"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!--=============== SKILLS 3 ===============-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-analysis skills__icon"></i>
-    
-                                <div>
-                                    <h1 class="skills__title">Data Engineer</h1>
-                                    <span class="skills__subtitle">More than 1 year</span>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-    
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Alteryx</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__alteryx"></span>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Data Analysis</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__dataanalysis"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Data Cleaning</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__datacleaning"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">ETL</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__datacleaning"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!----==========TEST===========-->
-
-            <!-- <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most recent work</span>
-            
-                <div class="portfolio__container container">
-                    <div class="grid-portfolio">
-                        <div class="card" onclick="openModal('myModal', '../assets/img/Poster_ALS.png')">
-                            <div class="card__image" style="background-image: url('../assets/img/Poster_ALS.png')"></div>
-                            <div class="card__content">
-                                <h3 class="card__title">Card 1</h3>
-                                <p class="card__description">Description for Card 1.</p>
-                            </div>
-                            <div class="card__overlay">
-                                <h3 class="card__overlay-title">Card 1</h3>
-                                <p class="card__overlay-description">Description for Card 1.</p>
-                            </div>
-                        </div> -->
-            
-                        <!-- Add more card elements for a total of 6 cards -->
-            
-                    <!-- </div>
-                </div>
-            </section>
-            
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('myModal')">&times;</span>
-                    <img class="modal-img" id="modalImage" src="">
-                </div>
-            </div> -->
-
-            <!--==================== PROJECTS ====================-->
-            <section class="services section" id="services">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">What i offer</span>
-
-                <div class="services__container container grid">
-                    <!--=============== PROJECTS 1 ===============-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-brain services__icon"></i>
-                            <h3 class="services__title">Deep Learning For Predicting Disease Progression of Clinical Endpoints in ALS</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More 
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Deep Learning For Predicting Disease Progression of Clinical Endpoints in ALS</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-    
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Amyotrophic Lateral Sclerosis (ALS) is a neurodegenerative disease with no cure and a short life expectancy.</p>
-                                        
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Use of Deep learning to predict ALS disease progression.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>The results obtained show some promising insights.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Usage of Python, Pytorch, Numpy and Pandas.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--=============== PROJECTS 2 ===============-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-eye services__icon"></i>
-                            <h3 class="services__title">Predicting Diabetic Retinopathy Using CNN's</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More 
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Predicting Diabetic Retinopathy Using CNN's</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-    
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creation of a Convolutional Neural Network, in conjunction with image preprocessing.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Eliminating noise from the dataset and exacerbating pathology features.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Distinguish between whether or not you have ocular pathology - Binary Classification.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Distinguish by the different types of existing pathology, on a scale of 0 to 4.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--=============== PROJECTS 3 ===============-->
-                    
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-dna services__icon"></i>
-                            <h3 class="services__title">Neural Network to play Asteroids with Genetic Algorithm</h3>
-                        </div>
-                        <span class="button button--flex button--small button--link services__button">
-                            View More 
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Neural Network to play Asteroids</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-    
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Genetic Algorithm to create several evolutionary Neural Networks.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Consists on the use of Natural Selection.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Fittest individuals are used to create a new generation.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>You can check a demonstration of the final version <a href="https://www.youtube.com/watch?v=ShCQgLThYQw">here.</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--=============== PROJECTS 4 ===============-->
-
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-car-sideview services__icon"></i>
-                            <h3 class="services__title">Traffic Simulation Using Python & Pygame</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More 
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Traffic Simulation Using Python & Pygame</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-    
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> Creation of a traffic simulation of a city through the use of several agents.</p>
-                                        
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>created a mechanism of two types of agents, Cars and Traffic Lights.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Through the use of Python and Pygame.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>You can check a demonstration of the final version <a href="https://www.youtube.com/watch?v=9GK5qc20hhE&t=2s">here.</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--=============== PROJECTS 5 ===============-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-image-question services__icon"></i>
-                            <h3 class="services__title">Pokemon Type Image Classification </h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More 
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Pokemon Type Image Classification</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-    
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Classification of Pokemon Types based on the images.</p>
-                                        
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Image preprocessing for better results.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Use of CNN models for training.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Through the use of Python and Pytorch.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--=============== PROJECTS 6 ===============-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-processor services__icon"></i>
-                            <h3 class="services__title">Machine-Learning Temporal Feature Extraction</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More 
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Machine-Learning Temporal Feature Extraction</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-    
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Algorithm able to aggregate and extract the specified resources as fast as possible, through parallelization.</p>
-                                        
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>A set of data is provided in the context of detecting financial fraud.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>To solve this, we can make use of the GPU or the CPU.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>The solution presented makes use of the CPU.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most recent work</span>
-
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <!--=============== PORTFOLIO 1 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/Poster_ALS.png" data-fancybox="portfolio">
-                                <img src="assets/img/Poster_ALS.png" alt="" class="portfolio__img">
-                            </a>
-                        
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Presentation at 7th LASIGE Workshop 2022 of my Master's Thesis</h3>
-                                <p class="portfolio__description">Master Thesis Poster.</p>
-                                <a href="https://github.com/LucasBSilva99/ALS/blob/main/Poster_ALS.pdf" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i>                            
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--=============== PORTFOLIO 2 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/MasterThesis.png" data-fancybox="portfolio">
-                                <img src="assets/img/MasterThesis.PNG" alt="" class="portfolio__img">
-                            </a>
-                        
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Deep Learning For Predicting Disease Progression of Clinical Endpoints in ALS</h3>
-                                <p class="portfolio__description">Master Thesis .</p>
-                                <a href="https://github.com/LucasBSilva99/ALS/blob/main/ALS_Lucas_Silva_DPEI_DissertacaoFinal.pdf" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i>                            
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--=============== PORTFOLIO 3 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-
-                            <a href="assets/img/retinopathy.png" data-fancybox="portfolio">
-                                <img src="assets/img/retinopathy.PNG" alt="" class="portfolio__img">
-                            </a>
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Predicting Diabetic Retinopathy Using CNN's</h3>
-                                <p class="portfolio__description">Deep Learning Project</p>
-                                <a href="https://github.com/LucasBSilva99/CNN_Retinopathy/blob/main/Relatorio_AAA.pdf" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i>                             
-                                </a>
-                            </div>
-                        </div>
-    
-                        <!--=============== PORTFOLIO 4 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/Asteroid_AI.PNG" data-fancybox="portfolio">
-                                <img src="assets/img/Asteroid_AI.PNG" alt="" class="portfolio__img">
-                            </a>
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Neural Network to play Asteroids with Genetic Algorithm</h3>
-                                <p class="portfolio__description">Deep Learning Project</p>
-                                <a href="https://github.com/LucasBSilva99/Asteroids_AI" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i>                            
-                                </a>
-
-                                <a href="https://www.youtube.com/watch?v=ShCQgLThYQw" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-youtube"></i>                             
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--=============== PORTFOLIO 5 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/Traffic_Simulation.PNG" data-fancybox="portfolio">
-                                <img src="assets/img/Traffic_Simulation.PNG" alt="" class="portfolio__img">
-                            </a>
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Traffic Simulation Using Python & Pygame</h3>
-                                <p class="portfolio__description">Multi-agent System Project</p>
-                                <a href="https://github.com/LucasBSilva99/Traffic_Simulation_FCUL" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i>                            
-                                </a>
-
-                                <a href="https://www.youtube.com/watch?v=9GK5qc20hhE&t=2s" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-youtube"></i>                            
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--=============== PORTFOLIO 6 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/Pokemon.PNG" data-fancybox="portfolio">
-                                <img src="assets/img/Pokemon.PNG" alt="" class="portfolio__img">
-                            </a>
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Pokemon Type Image Classification</h3>
-                                <p class="portfolio__description">Deep Learning Project</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i> 
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--=============== PORTFOLIO 7 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/PPC.PNG" data-fancybox="portfolio">
-                                <img src="assets/img/PPC.PNG" alt="" class="portfolio__img">
-                            </a>
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Machine-Learning Temporal Feature Extraction</h3>
-                                <p class="portfolio__description">Parallelization Algorithm Project</p>
-                                <a href="https://github.com/LucasBSilva99/Parallel_Temporal_Extraction" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i> 
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--=============== PORTFOLIO 8 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="assets/img/TFC.PNG" data-fancybox="portfolio">
-                                <img src="assets/img/TFC.PNG" alt="" class="portfolio__img">
-                            </a>
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Event Management Plataform</h3>
-                                <p class="portfolio__description">Bachelor Final Year Project</p>
-                                <a href="https://github.com/LucasBSilva99/TFC-CCC" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-github-alt"></i> 
-                                </a>
-
-                                <a href="https://www.youtube.com/watch?v=xAZd8a54t9k&app=desktop" class="button button--flex button--small portfolio__button">
-                                    <i class="uil uil-youtube"></i>                            
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">912951312</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">lucasbarretosilva99@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">Lisbon - Portugal</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Lucas Silva</h1>
-                        <span class="footer__subtitle">Data Engineer</span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact Me</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/lucasbarretosilva/" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-
-                        <a href="https://github.com/LucasBSilva99" target="_blank" class="footer__social">
-                            <i class="uil uil-github-alt"></i>                            
-                        </a>
-                    </div>
-                </div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucas Silva</title>
+<meta name="description" content="Lucas Silva, software developer building with AI in Lisbon. Python, PyTorch and machine learning projects.">
+<meta name="theme-color" content="#0a0d10">
+<link rel="icon" href="assets/img/logo_transparent2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #0a0d10;
+    --raise: #11161b;
+    --line: #26303a;
+    --line-soft: #171e25;
+    --text: #eef1f3;
+    --muted: #9aa6b0;
+    --dim: #7a8791;
+    --amber: #ffb224;
+    --amber-soft: rgba(255, 178, 36, 0.14);
+    --on-amber: #0a0d10;
+    --display: "Anybody", "Arial Narrow", system-ui, sans-serif;
+    --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --trail-w: 72px;
+    --gap-trail: 28px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--ground);
+    color: var(--text);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 2px; }
+  ::selection { background: var(--amber); color: var(--on-amber); }
+
+  /* ---------- Layout shell ---------- */
+  .page {
+    position: relative;
+    max-width: 1160px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 4vw, 40px);
+  }
+  main { padding-left: calc(var(--trail-w) + var(--gap-trail)); }
+
+  /* ---------- Trail ---------- */
+  .trail {
+    position: absolute;
+    left: clamp(16px, 4vw, 40px);
+    top: 0;
+    width: var(--trail-w);
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+  }
+  .trail .ahead { fill: none; stroke: var(--line); stroke-width: 2; stroke-dasharray: 2 7; stroke-linecap: round; }
+  .trail .done  { fill: none; stroke: var(--amber); stroke-width: 2.5; stroke-linejoin: round; }
+  .node .ring { fill: var(--ground); stroke: var(--dim); stroke-width: 2; }
+  .node .sat  { fill: var(--ground); stroke: var(--line); stroke-width: 1.5; }
+  .node .link { stroke: var(--line); stroke-width: 1; }
+  .node.on .ring { fill: var(--amber); stroke: var(--amber); }
+  .node.on .sat  { fill: var(--amber-soft); stroke: var(--amber); }
+  .node.on .link { stroke: var(--amber); opacity: 0.6; }
+  .puck-glow { fill: var(--amber-soft); }
+  .puck-arrow { fill: var(--amber); stroke: var(--ground); stroke-width: 1.5; stroke-linejoin: round; }
+
+  /* ---------- Header ---------- */
+  .bar {
+    position: sticky;
+    top: 0;
+    padding-top: env(safe-area-inset-top, 0px);
+    z-index: 20;
+    background: rgba(10, 13, 16, 0.88);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .bar-in {
+    max-width: 1160px;
+    margin-inline: auto;
+    padding: 12px clamp(16px, 4vw, 40px);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .mark {
+    font-family: var(--display);
+    font-stretch: 130%;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .mark span { color: var(--amber); }
+  nav { display: flex; gap: clamp(12px, 2.4vw, 28px); flex-wrap: wrap; }
+  nav a {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--muted);
+    padding-block: 4px;
+    border-bottom: 1px solid transparent;
+  }
+  nav a:hover { color: var(--text); border-bottom-color: var(--amber); }
+  .trip {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .trip b { color: var(--amber); font-weight: 500; }
+
+  /* ---------- Type ---------- */
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 18px;
+  }
+  h2 {
+    font-family: var(--display);
+    font-stretch: 112%;
+    font-weight: 700;
+    font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  p { margin: 0; }
+  .lede { color: var(--muted); max-width: 62ch; }
+
+  section { padding-block: clamp(64px, 9vw, 128px); scroll-margin-top: 48px; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding-block: clamp(40px, 6vw, 88px) clamp(56px, 8vw, 112px); }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 40px 56px; align-items: end; }
+  h1 {
+    font-family: var(--display);
+    font-stretch: 135%;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: clamp(3.4rem, 13vw, 8.6rem);
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+    margin: 0 0 32px;
+  }
+  h1 .dot { color: var(--amber); }
+  .tagline {
+    font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+    line-height: 1.4;
+    max-width: 30ch;
+    text-wrap: balance;
+  }
+  .tagline em { font-style: normal; color: var(--amber); }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 13px 20px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    color: var(--text);
+  }
+  .btn:hover { border-color: var(--amber); }
+  .btn.solid { background: var(--amber); border-color: var(--amber); color: var(--on-amber); font-weight: 500; }
+  .btn.solid:hover { background: #ffc255; border-color: #ffc255; }
+
+  .dash { margin: 0; border-top: 1px solid var(--line); }
+  .dash div { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .dash dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); padding-top: 3px; }
+  .dash dd { margin: 0; font-size: 15px; line-height: 1.45; }
+  .dash dd small { display: block; font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  /* ---------- About ---------- */
+  .split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px 56px; }
+  .prose { display: grid; gap: 18px; color: var(--muted); }
+  .prose strong { color: var(--text); font-weight: 500; }
+  .skills { margin: 40px 0 0; border-top: 1px solid var(--line); }
+  .skills div { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .skills dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
+  .skills dd { margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    padding: 3px 9px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  /* ---------- Experience ---------- */
+  .timeline { margin-top: 48px; border-top: 1px solid var(--line); }
+  .stop { display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 8px 24px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .years { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
+  .years .now { color: var(--amber); }
+  .stop h3 { margin: 0; font-size: 1.2rem; font-weight: 600; line-height: 1.3; }
+  .stop h3 span { color: var(--muted); font-weight: 400; }
+  .stop p { color: var(--muted); margin-top: 6px; max-width: 62ch; font-size: 16px; }
+  .langline { margin-top: 24px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+
+  /* ---------- Projects ---------- */
+  .projects { margin-top: 48px; border-top: 1px solid var(--line); }
+  .proj { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 16px 40px; padding: 30px 0; border-bottom: 1px solid var(--line); }
+  .proj h3 {
+    font-family: var(--display);
+    font-stretch: 108%;
+    font-weight: 650;
+    font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+    line-height: 1.15;
+    margin: 0 0 10px;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+  .proj p { color: var(--muted); font-size: 16px; max-width: 58ch; }
+  .proj:hover h3 { color: var(--amber); }
+  .proj-side { display: flex; flex-direction: column; gap: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: auto; }
+  .links a { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.04em; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; }
+  .links a:hover { color: var(--amber); border-bottom-color: var(--amber); }
+
+  /* ---------- Ride ---------- */
+  .ride-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px 56px; margin-top: 48px; align-items: start; }
+  .habits { border-top: 1px solid var(--line); }
+  .habit { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .habit h3 { margin: 0 0 12px; font-size: 1.2rem; font-weight: 600; }
+  .pair { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; padding-block: 3px; }
+  .pair span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); padding-top: 4px; }
+  .pair p { color: var(--muted); font-size: 16px; }
+  .plate { background: var(--raise); border: 1px solid var(--line); border-radius: 4px; padding: 6px 22px 10px; }
+  .plate h3 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); font-weight: 500; margin: 0; padding: 16px 0 12px; border-bottom: 1px solid var(--line); }
+  .plate div { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line-soft); }
+  .plate div:last-child { border-bottom: 0; }
+  .plate dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); padding-top: 3px; }
+  .plate dd { margin: 0; font-size: 15px; }
+  .plate .todo { color: var(--muted); border-bottom: 1px dashed var(--dim); }
+
+  /* ---------- Contact ---------- */
+  .mail {
+    display: inline-block;
+    margin-top: 32px;
+    font-family: var(--display);
+    font-stretch: 115%;
+    font-weight: 700;
+    font-size: clamp(1.4rem, 4.6vw, 3.2rem);
+    line-height: 1.1;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    border-bottom: 3px solid var(--amber);
+    padding-bottom: 6px;
+  }
+  .mail:hover { color: var(--amber); }
+  .elsewhere { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+
+  footer { border-top: 1px solid var(--line-soft); margin-top: 24px; padding-block: 28px 40px; font-family: var(--mono); font-size: 12px; color: var(--dim); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; padding-left: calc(var(--trail-w) + var(--gap-trail)); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .hero-grid, .split, .ride-grid, .proj { grid-template-columns: minmax(0, 1fr); }
+    .proj-side { gap: 14px; }
+    .links { margin-top: 0; }
+  }
+  @media (max-width: 720px) {
+    :root { --trail-w: 28px; --gap-trail: 16px; }
+    body { font-size: 16px; }
+    .trip .name { display: none; }
+    .bar-in { gap: 12px; }
+    nav { gap: 12px; }
+    nav a { font-size: 11px; }
+    .stop { grid-template-columns: minmax(0, 1fr); }
+    .years { padding-top: 0; }
+    .skills div, .dash div, .plate div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+    .pair { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+    .pair span { padding-top: 0; }
+  }
+  @media (max-width: 480px) {
+    .mark { display: none; }
+    .bar-in { justify-content: space-between; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-in">
+    <a class="mark" href="#top" aria-label="Lucas Silva, back to top">L<span>.</span>Silva</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Path</a>
+      <a href="#projects">Work</a>
+      <a href="#ride">Ride</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="trip" aria-hidden="true"><span class="name">Now: <b id="tripName">Start</b> · </span><b id="tripPct">0</b>%</div>
+  </div>
+</div>
+
+<div class="page" id="top">
+  <svg class="trail" id="trail" aria-hidden="true" focusable="false">
+    <defs><clipPath id="reach"><rect id="reachRect" x="-20" y="0" width="200" height="0"/></clipPath></defs>
+    <path class="ahead" id="ahead" d=""/>
+    <path class="done" id="done" d="" clip-path="url(#reach)"/>
+    <g id="nodes"></g>
+    <g id="puck">
+      <circle class="puck-glow" r="15"/>
+      <polygon class="puck-arrow" points="0,9 -7,-6 0,-2.5 7,-6"/>
+    </g>
+  </svg>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="start" data-wp="Start" style="padding-top: clamp(40px, 6vw, 88px);">
+      <div class="hero-grid">
+        <div>
+          <h1 id="heroTitle">Lucas<br>Silva<span class="dot">.</span></h1>
+          <p class="tagline">Software developer building with <em>AI</em>. Python and machine learning on weekdays, winding roads on weekends.</p>
+          <div class="actions">
+            <a class="btn solid" href="#projects">See the work</a>
+            <a class="btn" href="assets/pdf/Lucas_Silva_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          </div>
+        </div>
+        <dl class="dash" aria-label="At a glance">
+          <div><dt>Base</dt><dd>Lisbon, Portugal<small>38.72°N 9.14°W</small></dd></div>
+          <div><dt>Role</dt><dd>Python &amp; AI Developer at Siemens<small>since April 2024</small></dd></div>
+          <div><dt>Builds</dt><dd>Python, PyTorch, SQL, JavaScript</dd></div>
+          <div><dt>Off duty</dt><dd>BMW F900XR<small>motorcycles</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" data-wp="About">
+      <p class="eyebrow">About</p>
+      <div class="split">
+        <h2>Software and machine learning, applied to real data.</h2>
+        <div>
+          <div class="prose">
+            <p>I'm a software developer with a Master's in Computer Science from FCUL and a focus on artificial intelligence. My thesis used <strong>deep learning to predict how ALS progresses</strong>, and I've kept building in that direction since: convolutional networks, genetic algorithms, agent simulations and parallel feature extraction.</p>
+            <p>Since April 2024 I've been a Python &amp; AI Developer at Siemens. Before that I was a Data Engineer at KPMG in Lisbon, building ETL and analytics workflows with Python, SQL and Alteryx.</p>
+          </div>
+          <dl class="skills">
+            <div><dt>Languages</dt><dd><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Java</span><span class="chip">JavaScript</span></dd></div>
+            <div><dt>AI &amp; ML</dt><dd><span class="chip">PyTorch</span><span class="chip">Deep learning</span><span class="chip">CNNs</span><span class="chip">Genetic algorithms</span><span class="chip">NumPy</span><span class="chip">pandas</span></dd></div>
+            <div><dt>Data</dt><dd><span class="chip">ETL</span><span class="chip">Data cleaning</span><span class="chip">Data analysis</span><span class="chip">Alteryx</span></dd></div>
+            <div><dt>Cloud</dt><dd><span class="chip">Microsoft Azure (AZ-900)</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" data-wp="Path">
+      <p class="eyebrow">Path so far</p>
+      <h2>Where the road has gone.</h2>
+      <div class="timeline">
+        <article class="stop">
+          <div class="years"><span class="now">Apr 2024 – Present</span></div>
+          <div><h3>Python &amp; AI Developer <span>· Siemens</span></h3></div>
+        </article>
+        <article class="stop">
+          <div class="years">2022 – 2024</div>
+          <div><h3>Data Engineer <span>· KPMG</span></h3><p>Alteryx Foundation and Core certified, and Microsoft Azure Fundamentals (AZ-900).</p></div>
+        </article>
+        <article class="stop">
+          <div class="years">2021 – 2022</div>
+          <div><h3>Researcher <span>· LASIGE</span></h3><p>Funded by an FCT scholarship. Presented the ALS thesis as a poster at the 7th LASIGE Workshop, 2022.</p></div>
+        </article>
+        <article class="stop">
+          <div class="years">2020 – 2022</div>
+          <div><h3>MSc Computer Science <span>· FCUL</span></h3></div>
+        </article>
+        <article class="stop">
+          <div class="years">2018 – 2019</div>
+          <div><h3>Sales Assistant <span>· Worten</span></h3></div>
+        </article>
+        <article class="stop">
+          <div class="years">2017 – 2020</div>
+          <div><h3>BSc Computer Science <span>· ULHT</span></h3></div>
+        </article>
+      </div>
+      <p class="langline">Portuguese native · English advanced (Cambridge Advanced, 2017)</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-wp="Work">
+      <p class="eyebrow">Selected work</p>
+      <h2>Things I've built.</h2>
+      <div class="projects">
+        <article class="proj">
+          <div>
+            <h3>Deep learning for ALS progression</h3>
+            <p>My master's thesis: predicting how amyotrophic lateral sclerosis progresses over time with deep learning. Presented as a poster at the 7th LASIGE Workshop, 2022.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">NumPy</span><span class="chip">pandas</span></div>
+            <div class="links">
+              <a href="https://github.com/LucasBSilva99/ALS/blob/main/ALS_Lucas_Silva_DPEI_DissertacaoFinal.pdf" target="_blank" rel="noopener">Thesis ↗</a>
+              <a href="https://github.com/LucasBSilva99/ALS/blob/main/Poster_ALS.pdf" target="_blank" rel="noopener">Poster ↗</a>
             </div>
-        </footer>
+          </div>
+        </article>
+        <article class="proj">
+          <div>
+            <h3>Diabetic retinopathy with CNNs</h3>
+            <p>A convolutional neural network combined with image preprocessing to detect ocular pathology, both as a binary call and across grades 0 to 4.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Python</span><span class="chip">CNN</span></div>
+            <div class="links"><a href="https://github.com/LucasBSilva99/CNN_Retinopathy/blob/main/Relatorio_AAA.pdf" target="_blank" rel="noopener">Report ↗</a></div>
+          </div>
+        </article>
+        <article class="proj">
+          <div>
+            <h3>Asteroids, played by evolved networks</h3>
+            <p>A genetic algorithm breeds populations of neural networks that learn to play Asteroids through natural selection.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Python</span><span class="chip">Neural networks</span><span class="chip">Genetic algorithm</span></div>
+            <div class="links">
+              <a href="https://github.com/LucasBSilva99/Asteroids_AI" target="_blank" rel="noopener">Code ↗</a>
+              <a href="https://www.youtube.com/watch?v=ShCQgLThYQw" target="_blank" rel="noopener">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj">
+          <div>
+            <h3>Traffic simulation</h3>
+            <p>A multi-agent model of a city where cars and traffic lights are agents that react to each other.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Python</span><span class="chip">Pygame</span><span class="chip">Multi-agent</span></div>
+            <div class="links">
+              <a href="https://github.com/LucasBSilva99/Traffic_Simulation_FCUL" target="_blank" rel="noopener">Code ↗</a>
+              <a href="https://www.youtube.com/watch?v=9GK5qc20hhE&amp;t=2s" target="_blank" rel="noopener">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj">
+          <div>
+            <h3>Pokémon type classifier</h3>
+            <p>Image classification with a CNN and preprocessing, trained to predict a Pokémon's type from its picture.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">CNN</span></div>
+          </div>
+        </article>
+        <article class="proj">
+          <div>
+            <h3>Temporal feature extraction</h3>
+            <p>A parallel algorithm that aggregates and extracts the requested features as fast as possible, built for fraud-detection data.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Machine learning</span><span class="chip">Parallel computing</span></div>
+            <div class="links"><a href="https://github.com/LucasBSilva99/Parallel_Temporal_Extraction" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+        <article class="proj">
+          <div>
+            <h3>Event management platform</h3>
+            <p>My final-year bachelor's project: a platform for organising and managing events.</p>
+          </div>
+          <div class="proj-side">
+            <div class="tags"><span class="chip">Bachelor's project</span></div>
+            <div class="links">
+              <a href="https://github.com/LucasBSilva99/TFC-CCC" target="_blank" rel="noopener">Code ↗</a>
+              <a href="https://www.youtube.com/watch?v=xAZd8a54t9k" target="_blank" rel="noopener">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrollup" id="scroll-top">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
+    <!-- RIDE -->
+    <section id="ride" data-wp="Ride">
+      <p class="eyebrow">Off the clock</p>
+      <h2>The other engine.</h2>
+      <p class="lede" style="margin-top: 20px;">I ride motorcycles. It's where I do my best thinking, and the habits carry straight back to the desk.</p>
+      <div class="ride-grid">
+        <div class="habits">
+          <div class="habit">
+            <h3>Look where you want to go.</h3>
+            <div class="pair"><span>On the bike</span><p>Eyes up through the corner, not at the gravel.</p></div>
+            <div class="pair"><span>At the desk</span><p>Design for the next step, not the bug in front of you.</p></div>
+          </div>
+          <div class="habit">
+            <h3>Smooth is fast.</h3>
+            <div class="pair"><span>On the bike</span><p>Small, steady inputs beat big corrections.</p></div>
+            <div class="pair"><span>At the desk</span><p>Small, reviewable changes beat big rewrites.</p></div>
+          </div>
+          <div class="habit">
+            <h3>Maintain the machine.</h3>
+            <div class="pair"><span>On the bike</span><p>Chain, tires and brakes, checked before every ride.</p></div>
+            <div class="pair"><span>At the desk</span><p>Tests, logs and monitoring, checked before every release.</p></div>
+          </div>
+        </div>
+        <dl class="plate" aria-label="Rider's plate">
+          <h3>Rider's plate</h3>
+          <div><dt>Base</dt><dd>Lisbon, Portugal</dd></div>
+          <div><dt>Machine</dt><dd>BMW F900XR</dd></div>
+          <div><dt>Best road</dt><dd><span class="todo">Add a favourite route</span></dd></div>
+        </dl>
+      </div>
+    </section>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- CONTACT -->
+    <section id="contact" data-wp="Contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something.</h2>
+      <a class="mail" href="mailto:lucasbarretosilva99@gmail.com">lucasbarretosilva99@gmail.com</a>
+      <div class="elsewhere">
+        <a class="btn" href="https://www.linkedin.com/in/lucasbarretosilva/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/LucasBSilva99" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="assets/pdf/Lucas_Silva_CV.pdf" target="_blank" rel="noopener">CV (PDF) ↗</a>
+      </div>
+    </section>
+  </main>
 
-        
-        <!--==================== MEDIUM ZOOM JS ====================-->
-        <script src="/medium-zoom.min.js"></script>
+  <footer>
+    <span>© 2026 Lucas Silva</span>
+    <span>Lisbon · 38.72°N 9.14°W</span>
+  </footer>
+</div>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
+<script>
+(function () {
+  var page = document.getElementById('top');
+  var svg = document.getElementById('trail');
+  var ahead = document.getElementById('ahead');
+  var done = document.getElementById('done');
+  var nodesG = document.getElementById('nodes');
+  var puck = document.getElementById('puck');
+  var reach = document.getElementById('reachRect');
+  var tripName = document.getElementById('tripName');
+  var tripPct = document.getElementById('tripPct');
+  var NS = 'http://www.w3.org/2000/svg';
 
-        </script>
-        </script>
-    </body>
+  var W = 72, H = 1000, cx = 26, A = 18, P = 200, top = 0, wps = [], wide = true, ticking = false;
+
+  function el(name, attrs, parent) {
+    var n = document.createElementNS(NS, name);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  }
+  function xAt(y) { return cx + A * Math.sin(y / P); }
+
+  function build() {
+    W = svg.getBoundingClientRect().width || 72;
+    H = page.offsetHeight;
+    top = page.getBoundingClientRect().top + window.scrollY;
+    wide = W > 40;
+    cx = wide ? W * 0.34 : W * 0.5;
+    A = wide ? W * 0.24 : W * 0.2;
+    P = wide ? 210 : 140;
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('height', H);
+
+    var d = '';
+    for (var y = 0; y <= H; y += 8) d += (y ? 'L' : 'M') + xAt(y).toFixed(1) + ' ' + y + ' ';
+    ahead.setAttribute('d', d);
+    done.setAttribute('d', d);
+
+    while (nodesG.firstChild) nodesG.removeChild(nodesG.firstChild);
+    wps = [];
+    var secs = document.querySelectorAll('[data-wp]');
+    Array.prototype.forEach.call(secs, function (s, i) {
+      var target = i === 0 ? document.getElementById('heroTitle') : s.querySelector('.eyebrow');
+      var y = target.getBoundingClientRect().top + window.scrollY - top + (i === 0 ? 24 : 8);
+      var x = xAt(y);
+      var g = el('g', { 'class': 'node' }, nodesG);
+      if (wide) {
+        var s1 = [x + 13, y - 11], s2 = [x + 16, y + 10];
+        el('line', { 'class': 'link', x1: x, y1: y, x2: s1[0], y2: s1[1] }, g);
+        el('line', { 'class': 'link', x1: x, y1: y, x2: s2[0], y2: s2[1] }, g);
+        el('line', { 'class': 'link', x1: s1[0], y1: s1[1], x2: s2[0], y2: s2[1] }, g);
+        el('circle', { 'class': 'sat', cx: s1[0], cy: s1[1], r: 3 }, g);
+        el('circle', { 'class': 'sat', cx: s2[0], cy: s2[1], r: 3 }, g);
+      }
+      el('circle', { 'class': 'ring', cx: x, cy: y, r: wide ? 6.5 : 4.5 }, g);
+      wps.push({ g: g, y: y, name: s.getAttribute('data-wp') });
+    });
+    update();
+  }
+
+  function update() {
+    ticking = false;
+    var y = Math.max(0, Math.min(H, window.scrollY + window.innerHeight * 0.45 - top));
+    reach.setAttribute('height', y);
+    var x = xAt(y);
+    var dx = A * Math.cos(y / P) / P;
+    puck.setAttribute('transform', 'translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ') rotate(' + (-Math.atan(dx) * 180 / Math.PI).toFixed(1) + ')');
+    var cur = wps[0];
+    wps.forEach(function (w) {
+      var on = y >= w.y;
+      w.g.classList.toggle('on', on);
+      if (on) cur = w;
+    });
+    if (cur) tripName.textContent = cur.name;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    tripPct.textContent = max > 0 ? Math.round(Math.max(0, Math.min(1, window.scrollY / max)) * 100) : 0;
+  }
+
+  function onScroll() {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+  }
+
+  build();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', build);
+  if (window.ResizeObserver) new ResizeObserver(function () { build(); }).observe(page);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(build);
+})();
+</script>
+
+</body>
 </html>
