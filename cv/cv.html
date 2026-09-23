@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucas Silva CV</title>
+<!-- Designed CV. Build with: node cv/build.mjs  →  assets/pdf/Lucas_Silva_CV.pdf -->
+<style>
+  @font-face { font-family: "Anybody"; src: url("fonts/anybody-latin-standard-normal.woff2") format("woff2"); font-weight: 100 900; font-stretch: 50% 150%; }
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+  @font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+  @font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+
+  @page { size: A4; margin: 0; }
+  :root {
+    --paper: #ffffff;
+    --ink: #11161b;
+    --muted: #4c5863;
+    --dim: #7a8791;
+    --line: #dde2e6;
+    --side: #0a0d10;
+    --side-text: #eef1f3;
+    --side-muted: #a4afb8;
+    --side-line: #26303a;
+    --amber: #ffb224;
+    --amber-ink: #9a6200;
+    --display: "Anybody", "Arial Narrow", sans-serif;
+    --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono: "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sheet { width: 210mm; height: 296.8mm; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) 62mm; }
+  .main { padding: 12mm 9mm 10mm 12mm; }
+  .side { background: var(--side); color: var(--side-text); padding: 12mm 8mm 10mm 8mm; display: flex; flex-direction: column; gap: 4.6mm; }
+
+  /* header */
+  header { display: grid; grid-template-columns: 22mm minmax(0, 1fr); gap: 5mm; align-items: center; margin-bottom: 3mm; }
+  .photo { width: 22mm; height: 22mm; border-radius: 50%; object-fit: cover; background: #eef1f3; border: 0.6mm solid var(--amber); }
+  h1 { font-family: var(--display); font-stretch: 125%; font-weight: 800; text-transform: uppercase; font-size: 27pt; line-height: 1; margin: 0 0 1.6mm; white-space: nowrap; }
+  h1 .dot { display: inline-block; width: 0.2em; height: 0.2em; background: var(--amber); margin-left: 0.06em; }
+  .headline { font-family: var(--mono); font-size: 8.8pt; text-transform: uppercase; color: var(--amber-ink); font-weight: 500; margin: 0; }
+  .contact { display: flex; flex-wrap: wrap; gap: 0.6mm 3.2mm; font-size: 8.5pt; color: var(--muted); margin: 0 0 4.2mm; padding: 2.2mm 0; border-block: 0.3mm solid var(--line); }
+  .contact a { color: var(--ink); text-decoration: none; }
+
+  .profile { font-size: 9.3pt; line-height: 1.48; color: var(--muted); margin: 0 0 4mm; }
+  .profile strong { color: var(--ink); font-weight: 600; }
+
+  h2 { font-family: var(--mono); font-size: 8.4pt; font-weight: 500; text-transform: uppercase; color: var(--amber-ink); margin: 0 0 2.2mm; padding-bottom: 1.3mm; border-bottom: 0.3mm solid var(--line); }
+  section { margin-bottom: 3.6mm; }
+
+  .job { margin-bottom: 2.5mm; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  h3 { font-size: 10.4pt; font-weight: 600; margin: 0; line-height: 1.25; }
+  h3 span { font-weight: 400; color: var(--muted); }
+  .when { font-family: var(--mono); font-size: 7.6pt; color: var(--dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .when.now { color: var(--amber-ink); }
+  .job p { font-size: 8.8pt; line-height: 1.42; color: var(--muted); margin: 0.8mm 0 0; }
+
+  .work { display: grid; gap: 1.9mm; margin-top: 1.6mm; }
+  .item { border-left: 0.6mm solid var(--amber); padding-left: 3mm; }
+  .item h4 { font-size: 9.3pt; font-weight: 600; margin: 0; }
+  .item p { margin: 0.4mm 0 0; font-size: 8.7pt; line-height: 1.42; color: var(--muted); }
+  .item p strong { color: var(--ink); font-weight: 600; }
+  .stack { font-family: var(--mono); font-size: 7.4pt; color: var(--ink); margin-top: 0.7mm; }
+
+  .proj { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.2mm 5mm; }
+  .proj div h4 { font-size: 8.9pt; font-weight: 600; margin: 0; }
+  .proj div p { font-size: 8.3pt; line-height: 1.38; color: var(--muted); margin: 0.4mm 0 0; }
+
+  /* sidebar */
+  .side h2 { color: var(--amber); border-bottom-color: var(--side-line); }
+  .side ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1mm; font-size: 8.4pt; line-height: 1.32; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1mm; margin-bottom: 1.8mm; }
+  .chips span { font-family: var(--mono); font-size: 6.9pt; padding: 0.35mm 1.4mm; border: 0.25mm solid var(--side-line); border-radius: 0.5mm; white-space: nowrap; }
+  .grp { font-family: var(--mono); font-size: 6.9pt; text-transform: uppercase; color: var(--side-muted); margin: 0 0 1.1mm; }
+  .side small { color: var(--side-muted); font-size: 8pt; }
+  .nw { white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <main class="main">
+    <header>
+      <img class="photo" src="../assets/img/perfil.png" alt="Lucas Silva">
+      <div>
+        <h1>Lucas Silva<span class="dot" aria-hidden="true"></span></h1>
+        <p class="headline">AI Engineer · Machine Learning · LLMs · Python</p>
+      </div>
+    </header>
+
+    <p class="contact">
+      <a href="mailto:lucasbarretosilva99@gmail.com">lucasbarretosilva99@gmail.com</a>
+      <span>+351 912 951 312</span>
+      <span>Lisbon, Portugal · open to remote</span>
+      <a href="https://www.linkedin.com/in/lucasbarretosilva/">linkedin.com/in/lucasbarretosilva</a>
+      <a href="https://github.com/LucasBSilva99">github.com/LucasBSilva99</a>
+      <a href="https://lucasbsilva99.github.io">lucasbsilva99.github.io</a>
+    </p>
+
+    <p class="profile">AI developer with 4+ years across <strong>machine learning, data engineering and full-stack development</strong>. At Siemens, builds production ML systems that automate payment-to-invoice matching for 3–5k payments a day, and leads the department's AI knowledge sharing and training. MSc in Computer Science specialised in Artificial Intelligence.</p>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head"><h3>Python &amp; AI Developer <span>· Siemens, Lisbon</span></h3><span class="when now">Apr 2024 – Present</span></div>
+        <div class="work">
+          <div class="item">
+            <h4>AI payment mapping</h4>
+            <p>Built a machine learning system that combines a classifier with a retrieval model to map incoming payments to invoices. <strong>Raised automated match coverage from 83–85% to about 88–90%</strong> across 3–5k payments a day, reducing manual reconciliation work.</p>
+            <div class="stack">Python · PyTorch · TensorFlow · Azure · SQL</div>
+          </div>
+          <div class="item">
+            <h4>Pension investment insights application</h4>
+            <p>Full-stack development of an application that gives insight into pension investments through interactive charts and data views, supporting investment decisions. Responsible for application security and management.</p>
+            <div class="stack">Python · Django · REST APIs</div>
+          </div>
+          <div class="item">
+            <h4>AI knowledge sharing and training</h4>
+            <p>Founded a department initiative to share AI knowledge through talks and use-case showcases, and helped deliver AI trainings to colleagues. Key expert and main point of contact on AI in the department.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><h3>Data Engineer <span>· KPMG, Lisbon</span></h3><span class="when">Sep 2022 – Mar 2024</span></div>
+        <p>Advisory, Technology Consulting. Built ETL and analytics workflows with Python, SQL and Alteryx for client data.</p>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><h3>Researcher <span>· LASIGE, FCUL</span></h3><span class="when">2021 – 2022</span></div>
+        <p>FCT research scholarship. Deep learning (MLP, CNN, LSTM) for predicting ALS disease progression; presented at the 7th LASIGE Workshop, 2022.</p>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><h3>Sales Assistant <span>· Worten</span></h3><span class="when">Sep 2018 – Oct 2019</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="job">
+        <div class="job-head"><h3>MSc Computer Science and Engineering, Artificial Intelligence <span>· FCUL</span></h3><span class="when">2020 – 2022</span></div>
+        <p>Thesis: Deep Learning for Predicting Disease Progression of Clinical Endpoints in ALS. Final grade 16/20.</p>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3>BSc Computer Science and Engineering <span>· ULHT</span></h3><span class="when">2017 – 2020</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="proj">
+        <div><h4>Diabetic retinopathy with CNNs</h4><p>Image preprocessing and a CNN for binary and 0–4 grade classification. TensorFlow, Keras.</p></div>
+        <div><h4>Asteroids with evolved networks</h4><p>A genetic algorithm evolves neural networks that learn to play Asteroids.</p></div>
+        <div><h4>Parallel temporal feature extraction</h4><p>Parallel feature aggregation for fraud-detection data.</p></div>
+        <div><h4>Multi-agent traffic simulation</h4><p>Cars and traffic lights as autonomous agents. Python, Pygame.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="side">
+    <section>
+      <h2>Skills</h2>
+      <p class="grp">AI and machine learning</p>
+      <div class="chips"><span>Machine Learning</span><span>Deep Learning</span><span>LLMs</span><span>Generative AI</span><span>Classification</span><span>Retrieval models</span><span>PyTorch</span><span>TensorFlow</span><span>NumPy</span><span>pandas</span></div>
+      <p class="grp">Programming</p>
+      <div class="chips"><span>Python</span><span>SQL</span><span>JavaScript</span><span>Java</span></div>
+      <p class="grp">Web and APIs</p>
+      <div class="chips"><span>Django</span><span>REST APIs</span><span>Back end</span><span>Front end</span><span>App security</span></div>
+      <p class="grp">Cloud and DevOps</p>
+      <div class="chips"><span>Azure</span><span>Docker</span><span>Git</span><span>CI/CD</span></div>
+      <p class="grp">Data</p>
+      <div class="chips"><span>Data Engineering</span><span>ETL</span><span>Alteryx</span><span>Data Analysis</span></div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Microsoft Azure Fundamentals <span class="nw">(AZ-900)</span></li>
+        <li>Alteryx Foundation and Core</li>
+        <li>Cambridge Certificate in Advanced English <small>· 2017</small></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>Portuguese <small>· native</small></li>
+        <li>English <small>· advanced (C1)</small></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Activities</h2>
+      <ul>
+        <li>Finalist, AIESEC Leadership Tournament <small>· 2019</small></li>
+        <li>Volunteer team coordinator, Web Summit <small>· 2019</small></li>
+        <li>Volunteer, greyhound rescue association</li>
+        <li>Motorcycle riding, travelling</li>
+      </ul>
+    </section>
+  </aside>
+</div>
+</body>
+</html>
